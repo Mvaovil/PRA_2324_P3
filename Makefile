@@ -3,4 +3,6 @@ bin/testTableEntry: testTableEntry.cpp TableEntry.h
 	g++ -o bin/testTableEntry testTableEntry.cpp
 clean:
 	rm -rf *.o *.gch bin
-
+bin/testHashTable: testHashTable.cpp HashTable.h
+	mkdir -p bin
+	g++ -std=c++20 -o bin/testHashTable testHashTable.cpp -g
