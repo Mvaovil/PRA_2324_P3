@@ -6,3 +6,6 @@ clean:
 bin/testHashTable: testHashTable.cpp HashTable.h
 	mkdir -p bin
 	g++ -std=c++20 -o bin/testHashTable testHashTable.cpp -g
+bin/testBSTree: testBSTree.cpp BSTree.h
+	mkdir -p bin
+	g++ -std=c++20 -o bin/testBSTree testBSTree.cpp
